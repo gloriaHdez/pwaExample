@@ -25,6 +25,8 @@ const CACHE_NAME = 'v1_cache_pwa';
      	'./img/favicon-64.png',
      	'./img/favicon-32.png',
      	'./img/favicon-16.png',
+     	'./js/jquery.min.js',
+     	'./pwa.mp4',
    
 	];
 
@@ -77,8 +79,10 @@ const CACHE_NAME = 'v1_cache_pwa';
 				  .then(res=>{
 				  	//devuelvo datos desde cache
 				  	if(res){
+				  		console.log("se encuentra en cache el recurso, lo devuelvo.");
 				  			return res;
 				  		}
+				  		console.log("sno se encuentra en cache, se permite la peticion...");
 				  		//si no esta en cache la recupero del servidor y se retorna.
 				  		return fetch(e.request);
 				  })
