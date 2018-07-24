@@ -1,4 +1,4 @@
-﻿/*estilos generales*/
+/*estilos generales*/
 
 *{
 	margin: 0px;
@@ -36,7 +36,7 @@ html, body{
 #logo h1{
 	font-weight: bold;
 	font-size: 25px;
-	color: #000;/* #FB314E;*/
+	color: #FB314E;
 }
 
 #menu{
@@ -64,7 +64,7 @@ color: #FB314E;
 
 #slider{
 	height: 300px;
-	background: #0000; /*#FB314E;*/
+	background: #FB314E;
 
 }
 #slider h2{
@@ -111,7 +111,7 @@ margin-bottom: 20px;
 }
 
 /*videos*/
-.video iframe{
+.video iframe, .video video{
 width: 80%;
 height: 170px;
 }
